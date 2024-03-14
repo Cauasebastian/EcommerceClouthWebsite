@@ -40,14 +40,6 @@ p {
   margin: 15px 0 20px 0;
 }
 
-.header-p1 {
-  padding: 40px 80px;
-}
-
-.header-m1 {
-  margin: 40px 0;
-}
-
 body {
   width: 100%;
 }
@@ -59,10 +51,11 @@ header{
     justify-content: space-between;
     padding: 20px 80px;
     background: #e3e6f3;
-    box-shadow: 0 5px rgba(0, 0, 0, 0.06);
-}
-header img {
-
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 #navbar{
      display: flex;
@@ -98,3 +91,94 @@ header img {
   transition: 0.5s ease-in;
 }
 
+/*Home Page*/
+#banner{
+  background-image: url();
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+#banner h4{
+padding-bottom: 15px;
+}
+#banner h1{
+  color: #088178;
+}
+/*style for button*/
+#banner button{
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+#banner button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+#banner button:active {
+  transform: translateY(-1px);
+}
+
+/*Features*/
+.feature-box img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+#features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#features .feature-box{
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #cce7d0;
+  border-radius: 8px;
+  margin: 15px ;
+
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  
+}
+#features .feature-box:hover {
+  box-shadow: 0px 15px 20px rgba(10, 10, 10, 0.4);
+  transform: translateY(-7px);
+  transform: scale(1.2);
+}
+#features .feature-box:active {
+  transform: translateY(-1px);
+}
+#features .feature-box h6 {
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color: #088178;
+  background-color: #efecec;
+
+}
