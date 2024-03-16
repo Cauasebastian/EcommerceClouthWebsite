@@ -361,3 +361,123 @@ successively
   transform-origin: bottom left;
   
 }
+
+/*------------ 3º Banner -------------------- */
+#sm-banner{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+#sm-banner .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(img/banner/b17.jpg);
+  min-width: 650px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+#sm-banner .banner-box:hover .normal-button {
+  background-color: #ffffff;
+  box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
+  color: #000000;
+  transform: translateY(-7px);
+}
+
+#sm-banner .banner-box:nth-child(1) {
+  background-image: url(img/banner/b17.jpg);
+}
+
+#sm-banner .banner-box:nth-child(2) {
+  background-image: url(img/banner/b10.jpg);  
+}
+#sm-banner h4{
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+}
+#sm-banner h2{
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+}
+#sm-banner span{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+/* banners button*/
+.normal-button {
+  padding: 1.3em 3em;
+  border: 1px solid #ffffff;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: transparent;
+  box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+#sm-banner .banner-box:hover .normal-button:active {
+  transform: translateY(-1px);
+  background-color: #ffffff; /* Altera a cor de fundo quando clicado */
+  color: #000000; /* Altera a cor do texto quando clicado */
+  box-shadow: none; /* Remove a sombra quando clicado */
+}
+
+/*----------------- Banner3 --------------------*/
+#banner3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 80px;
+}
+#banner3 .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(img/banner/b17.jpg);
+  min-width: 30%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+#banner3 h2{
+  color: #fff;
+  font-weight: 900;
+  font-size: 15px;
+}
+#banner3 h3{
+  color: #ec544e;
+  font-weight: 900;
+  font-size: 15px;
+}
+#banner3 .banner-box:nth-child(1) {
+  background-image: url(img/banner/b7.jpg);
+}
+
+#banner3 .banner-box:nth-child(2) {
+  background-image: url(img/banner/b18.jpg);  
+}
+#banner3 .banner-box:nth-child(3) {
+  background-image: url(img/banner/b4.jpg);
+}
+
+
+
+
+
+
+
