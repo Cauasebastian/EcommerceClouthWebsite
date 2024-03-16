@@ -39,6 +39,12 @@ p {
   color: #465b52;
   margin: 15px 0 20px 0;
 }
+.section-p1{
+  padding: 40px 80px;
+}
+.section-m1{
+  margin: 40px 0;
+}
 
 body {
   width: 100%;
@@ -267,4 +273,91 @@ successively
 #products-section .pro .cart::before{
   font-weight: 500;
   font-size: 24px;
+}
+/*------------- Banner2 -------------------*/
+#banner2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(img/banner/b2.jpg);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+#banner2 h4{
+  color: #fff;
+  font-size: 16px;
+}
+#banner2 h2{
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0;
+}
+#banner2 h2 span{
+  color: red;
+}
+/*Button CSS*/
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #fff; /* Cor do texto */
+  padding-top: 20px;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+  color: #fff; /* Cor do texto */
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+  fill: #fff; /* Cor do ícone */
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+  fill: #fff; /* Cor do ícone no hover */
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: #fff; /* Cor do texto */
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff; /* Cor da linha de sublinhado */
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  color: #fff; /* Cor do texto */
+}
+.cta span:hover{
+  transform: scale(1.1);
+}
+
+.cta:hover .hover-underline-animation:after {
+  color: #fff; /* Cor do texto no hover */
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  
 }
