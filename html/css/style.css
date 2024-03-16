@@ -77,6 +77,7 @@ header{
 #navbar li a:hover,
 #navbar li a.active{
   color: #088178;
+  font-size: 17px;
 }
 #navbar li a.active::after,
 #navbar li a:hover::after{
@@ -93,7 +94,7 @@ header{
 
 /*Home Page*/
 #banner{
-  background-image: url();
+  background-image: url("img/banner-img.png");
   height: 90vh;
   width: 100%;
   background-size: cover;
@@ -137,9 +138,13 @@ padding-bottom: 15px;
   transform: translateY(-1px);
 }
 
-/*Features*/
+/*----------------- Features -----------------------*/
+#feature-services {
+  text-align: center;
+}
 .feature-box img{
   width: 100%;
+  height: 112px;
   margin-bottom: 10px;
 }
 
@@ -154,6 +159,7 @@ padding-bottom: 15px;
 }
 #features .feature-box{
   width: 180px;
+  height: 206px;
   text-align: center;
   padding: 25px 15px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -181,4 +187,84 @@ padding-bottom: 15px;
   color: #088178;
   background-color: #efecec;
 
+}
+/*
+  if i need to change the color of the background of h6 
+
+  #features features-box:nth-child(number of div) h6 {
+    background-color: the color that i want ; 
+  }
+  just change the number 
+successively
+*/
+
+/*----------------- Products ----------------------- */
+#products-section{
+  text-align: center;
+}
+#products-section .pro-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+#products-section .pro{
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+}
+#products-section .pro:hover{
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+
+#products-section .pro img {
+  width: 100%;
+  border-radius: 20px;
+  image-rendering: -webkit-optimize-contrast; /* Melhora a renderização no Chrome */
+  image-rendering: optimizeQuality; /* Melhora a renderização em navegadores compatíveis */
+}
+
+#products-section .pro .des{
+  text-align: start;
+  padding: 10px 0;
+}
+#products-section .pro .des span{
+  color: #606063;
+  font: size 12px;
+}
+#products-section .pro .des h5{
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+#products-section .pro .des h4{
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #088178;
+}
+#products-section .pro .cart{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e8f6ea;
+  font-weight: 500;
+  color: #088178;
+  border: 1px solid #cce7d0;
+  bottom: 20px;
+  right: 10px;
+  position: absolute;
+}
+#products-section .pro .cart::before{
+  font-weight: 500;
+  font-size: 24px;
 }
