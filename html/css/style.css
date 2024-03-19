@@ -95,7 +95,21 @@ header{
   position: absolute;
   bottom: -4px;
   left: 20px;
-  transition: 0.5s ease-in;
+  transition: 0.3s ease-in;
+}
+#mobile{
+  display: none;
+  align-items: center;
+}
+#close{
+  display: none;
+}
+#navbar .bx{
+  font-size: x-large;
+  transition: 0.3s ease-in
+}
+#navbar .bx:hover{
+  transform: scale(1.1);
 }
 
 /*Home Page*/
@@ -617,6 +631,7 @@ footer .copyright{
     padding-left: 20px;
   }
   #close{
+    display: initial;
     position: absolute;
     top: 30px;
     left: 30px;
