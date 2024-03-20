@@ -67,6 +67,7 @@
 }
 
 /*---------------- Single Product Responsivity -----------------------*/
+@media(max-width:477px) {
 #prodetails{
     display: flex;
     flex-direction: column;
@@ -77,4 +78,5 @@
 }
 #prodetails .single-pro-details{
     width: 100%;
+}
 }
